@@ -17,8 +17,9 @@ function hideModal() {
 }
 modalClose.addEventListener("click", hideModal);
 footerClose.addEventListener("click", hideModal);
+// Click bên ngoài modal sẽ close
 modal.addEventListener("click", hideModal);
-// stopPropagation
+// Ngăn nổi bọt khi click bên trong modal
 modalContainer.addEventListener("click", function (e) {
     e.stopPropagation();
 });
